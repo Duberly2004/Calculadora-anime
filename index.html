@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,400;1,500&display=swap" rel="stylesheet">
+
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script src="./scritpt/display.js" type="text/javaScript"></script>
+    <script src="./scritpt/calculadora.js" type="text/javaScript" ></script>
+    <script src="./scritpt/index.js" type="text/javaScript" defer ></script>
+
+
+    
+    <!-- con la palabra defer lograremos que se ejecute el javascript luego de aver ejercutado lo elementos del body -->
+
+</head>
+<body>
+    <section>
+        <div class="container">
+          <div class="calculadora">
+            <div class="display">
+                
+                <div id="valor-anterior"></div>
+                <div id="valor-actual"></div>  
+            </div>
+            <button onclick="display.borrarTodo()" class="col-2">C</button>
+            <button onclick="display.borrar()">&larr;</button>
+            <button class="operador" value="dividir">%</button>
+            <button class="numero">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button class="operador" value="multiplicar">x</button>
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button class="operador" value="restar">-</button>
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button class="operador" value="sumar">+</button>
+            <button class="col-2 numero">0</button>
+            <button class="numero">.</button>
+            <button class="operador" value="igual">=</button>
+        </div>
+     </div>
+  </section>
+  <footer>
+   
+        <p class="nombre">&copy; Mondragón Manchay, Duberly Ivan</p>
+   
+  </footer>
+</body>
+</html>
